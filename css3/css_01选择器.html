@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>选择器 | 海贝课堂</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3f3b8be53c4420bfd58de7c161ab4a5e";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+          </script>
+    <meta name="description" content="web开发、SQL、Delphi学习笔记">
+    
+    <link rel="preload" href="/assets/css/0.styles.576ebed1.css" as="style"><link rel="preload" href="/assets/js/app.ca2b87e8.js" as="script"><link rel="preload" href="/assets/js/2.67e62386.js" as="script"><link rel="preload" href="/assets/js/12.1e1c76e1.js" as="script"><link rel="prefetch" href="/assets/js/10.b4f39549.js"><link rel="prefetch" href="/assets/js/11.cf15e2f7.js"><link rel="prefetch" href="/assets/js/13.d61ba85a.js"><link rel="prefetch" href="/assets/js/14.48098a87.js"><link rel="prefetch" href="/assets/js/15.d8aec2d6.js"><link rel="prefetch" href="/assets/js/16.bc3768c0.js"><link rel="prefetch" href="/assets/js/17.8bc388ca.js"><link rel="prefetch" href="/assets/js/18.ace26f31.js"><link rel="prefetch" href="/assets/js/19.c73c2cdf.js"><link rel="prefetch" href="/assets/js/20.fea3585a.js"><link rel="prefetch" href="/assets/js/21.ec2f6033.js"><link rel="prefetch" href="/assets/js/22.74204588.js"><link rel="prefetch" href="/assets/js/23.e6e85fbf.js"><link rel="prefetch" href="/assets/js/24.dbcfd12c.js"><link rel="prefetch" href="/assets/js/25.956085a7.js"><link rel="prefetch" href="/assets/js/26.cc5e8bfd.js"><link rel="prefetch" href="/assets/js/27.c6c49cec.js"><link rel="prefetch" href="/assets/js/28.39842da3.js"><link rel="prefetch" href="/assets/js/29.1ddb14bf.js"><link rel="prefetch" href="/assets/js/3.ce047343.js"><link rel="prefetch" href="/assets/js/30.10c78e35.js"><link rel="prefetch" href="/assets/js/31.32e36ea6.js"><link rel="prefetch" href="/assets/js/32.edae8995.js"><link rel="prefetch" href="/assets/js/33.f3e6ca9c.js"><link rel="prefetch" href="/assets/js/34.cbc2ef62.js"><link rel="prefetch" href="/assets/js/35.24431fff.js"><link rel="prefetch" href="/assets/js/36.8a0a4253.js"><link rel="prefetch" href="/assets/js/37.04fd0ba3.js"><link rel="prefetch" href="/assets/js/38.cde26f46.js"><link rel="prefetch" href="/assets/js/39.afc4c15b.js"><link rel="prefetch" href="/assets/js/4.859a19ac.js"><link rel="prefetch" href="/assets/js/40.79940bf8.js"><link rel="prefetch" href="/assets/js/41.90f0d80f.js"><link rel="prefetch" href="/assets/js/42.648879b4.js"><link rel="prefetch" href="/assets/js/43.16e62999.js"><link rel="prefetch" href="/assets/js/44.6743936f.js"><link rel="prefetch" href="/assets/js/45.a0a1674f.js"><link rel="prefetch" href="/assets/js/46.1b10e455.js"><link rel="prefetch" href="/assets/js/47.971bece1.js"><link rel="prefetch" href="/assets/js/48.5d37040a.js"><link rel="prefetch" href="/assets/js/49.ac106843.js"><link rel="prefetch" href="/assets/js/5.4f1a5aca.js"><link rel="prefetch" href="/assets/js/50.2b563658.js"><link rel="prefetch" href="/assets/js/51.45f367ec.js"><link rel="prefetch" href="/assets/js/52.881450cf.js"><link rel="prefetch" href="/assets/js/53.98901040.js"><link rel="prefetch" href="/assets/js/54.709aa505.js"><link rel="prefetch" href="/assets/js/55.0e733eff.js"><link rel="prefetch" href="/assets/js/56.44d859f3.js"><link rel="prefetch" href="/assets/js/57.e8ccd9a4.js"><link rel="prefetch" href="/assets/js/6.df560b76.js"><link rel="prefetch" href="/assets/js/7.c9d9c53f.js"><link rel="prefetch" href="/assets/js/8.850dbbc0.js"><link rel="prefetch" href="/assets/js/9.83f6bab7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.576ebed1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="海贝课堂" class="logo"> <span class="site-name can-hide">海贝课堂</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程教程" class="dropdown-title"><span class="title">编程教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程教程" class="mobile-dropdown-title"><span class="title">编程教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/delphi/" class="nav-link">
+  Delphi
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++ Builder
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  SQL
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/html5/" class="nav-link">
+  Html5
+</a></li><li class="dropdown-subitem"><a href="/css3/" class="nav-link router-link-active">
+  CSS3
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/machine/" class="nav-link">
+  机械设计
+</a></div><div class="nav-item"><a href="/soft/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><a href="https://github.com/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://blog.csdn.net/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://yhcad.ys168.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  永硕网盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.yijee.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  易集收藏
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://nav.simpsearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简单导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://mp.weixin.qq.com/s/zeq1sTmaPsKt7Bsok0Ldrg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  常用工具
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鸠摩搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.chaonengsou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  超能搜
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://xiongdipan.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  兄弟盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程教程" class="dropdown-title"><span class="title">编程教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程教程" class="mobile-dropdown-title"><span class="title">编程教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/delphi/" class="nav-link">
+  Delphi
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++ Builder
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  SQL
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/html5/" class="nav-link">
+  Html5
+</a></li><li class="dropdown-subitem"><a href="/css3/" class="nav-link router-link-active">
+  CSS3
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/machine/" class="nav-link">
+  机械设计
+</a></div><div class="nav-item"><a href="/soft/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><a href="https://github.com/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://blog.csdn.net/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://yhcad.ys168.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  永硕网盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.yijee.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  易集收藏
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://nav.simpsearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简单导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://mp.weixin.qq.com/s/zeq1sTmaPsKt7Bsok0Ldrg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  常用工具
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鸠摩搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.chaonengsou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  超能搜
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://xiongdipan.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  兄弟盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>学习笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>编程教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/delphi/" class="sidebar-link">Delphi10 手册</a></li><li><a href="/delphi/Delphi01.html" class="sidebar-link">/delphi/Delphi01.html</a></li><li><a href="/delphi/Delphi02.html" class="sidebar-link">Delphi</a></li><li><a href="/delphi/Delphi03.html" class="sidebar-link">Delphi2</a></li><li><a href="/cpp/" class="sidebar-link">C++ Bueilder  教程</a></li><li><a href="/cpp/Cpp20220404.html" class="sidebar-link">C++ Bueilder 教程2</a></li><li><a href="/sql/" class="sidebar-link">SQL语句1</a></li><li><a href="/sql/sql01.html" class="sidebar-link">经典50条SQL语句</a></li><li><a href="/sql/sql02.html" class="sidebar-link">SQL语句2</a></li><li><a href="/html5/" class="sidebar-link">学习环境</a></li><li><a href="/html5/pic.html" class="sidebar-link">链接与图片</a></li><li><a href="/html5/tab.html" class="sidebar-link">表单与列表</a></li><li><a href="/css3/" aria-current="page" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_01选择器.html" class="active sidebar-link">选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#选择器-2" class="sidebar-link">选择器</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#基本选择器" class="sidebar-link">基本选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#标签选择" class="sidebar-link">标签选择</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#类选择器" class="sidebar-link">类选择器</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#id选择器" class="sidebar-link">ID选择器</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#结构选择器" class="sidebar-link">结构选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#后代选择器" class="sidebar-link">后代选择器</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#子元素选择" class="sidebar-link">子元素选择</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#紧邻兄弟元素" class="sidebar-link">紧邻兄弟元素</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#后面兄弟元素" class="sidebar-link">后面兄弟元素</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#属性选择器" class="sidebar-link">属性选择器</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#伪类选择器" class="sidebar-link">伪类选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#超链接伪类" class="sidebar-link">:超链接伪类</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#target" class="sidebar-link">: target</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#root" class="sidebar-link">:root</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#empty" class="sidebar-link">:empty</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#结构伪类" class="sidebar-link">结构伪类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#first-child" class="sidebar-link">:first-child</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#first-of-type" class="sidebar-link">:first-of-type</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#last-child" class="sidebar-link">:last-child</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#last-of-type" class="sidebar-link">:last-of-type</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#only-child" class="sidebar-link">:only-child</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#only-of-type" class="sidebar-link">:only-of-type</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#nth-child-n" class="sidebar-link">:nth-child(n)</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#nth-of-type-n" class="sidebar-link">:nth-of-type(n)</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#计算数量" class="sidebar-link">计算数量</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#奇数元素" class="sidebar-link">奇数元素</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#偶数元素" class="sidebar-link">偶数元素</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#nth-last-child-n" class="sidebar-link">:nth-last-child(n)</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#nth-last-of-type-n" class="sidebar-link">:nth-last-of-type(n)</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#not-selector" class="sidebar-link">:not(selector)</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#表单伪类" class="sidebar-link">表单伪类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#表单属性样式" class="sidebar-link">表单属性样式</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#表单必选样式" class="sidebar-link">表单必选样式</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#表单验证样式" class="sidebar-link">表单验证样式</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#字符伪类" class="sidebar-link">字符伪类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#首字母大写" class="sidebar-link">首字母大写</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#段落首行处理" class="sidebar-link">段落首行处理</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#在元素前添加" class="sidebar-link">在元素前添加</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#搜索框示例" class="sidebar-link">搜索框示例</a></li><li class="sidebar-sub-header"><a href="/css3/css_01选择器.html#添加属性内容" class="sidebar-link">添加属性内容</a></li></ul></li></ul></li><li><a href="/css3/css_02元素权重.html" class="sidebar-link">元素权重</a></li><li><a href="/css3/css_03文本控制.html" class="sidebar-link">文本基础</a></li><li><a href="/css3/css_04盒子模型.html" class="sidebar-link">盒子模型</a></li><li><a href="/css3/css_05背景处理.html" class="sidebar-link">背景样式</a></li><li><a href="/css3/css_06数据样式.html" class="sidebar-link">表格</a></li><li><a href="/css3/css_07浮动布局.html" class="sidebar-link">浮动布局</a></li><li><a href="/css3/css_08定位布局.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_09弹性布局.html" class="sidebar-link">了解弹性</a></li><li><a href="/css3/css_10栅格介绍.html" class="sidebar-link">栅格介绍</a></li><li><a href="/css3/css_11变形动画.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_12过渡延迟.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_13帧动画.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_14媒体查询.html" class="sidebar-link">媒体查询</a></li><li><a href="/css3/css_15响应尺寸.html" class="sidebar-link">响应计算</a></li><li><a href="/css3/css_16字体图标.html" class="sidebar-link">字体图标</a></li><li><a href="/css3/css_17常用技巧.html" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/18 常用技巧.html#常见技巧)常见技巧</a></li><li><a href="/python/" class="sidebar-link">python学习笔记(首页)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>机械设计</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>软件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="选择器"><a href="#选择器" class="header-anchor">#</a> 选择器</h1> <h2 id="选择器-2"><a href="#选择器-2" class="header-anchor">#</a> 选择器</h2> <p>样式是做用在元素标签上的，通过本章将可以随意查找元素来应用样式。</p> <p>所有用于选择特定元素的选择符又分三种。</p> <ul><li><p>上下文选择符。基于祖先或同胞元素选择一个元素。</p></li> <li><p>ID和类选择符。基于id和class属性的值（你自己设定）选择元素。</p></li> <li><p>属性选择符。基于属性的有无和特征选择元素。</p> <p>1.上下文选择符</p> <p>上下文选择符的格式如下：</p> <p>标签1 标签2 {声明}</p> <p>其中，标签2就是我们想要选择的目标，而且只有在标签1是其祖先元素（不一定是父元素）的情况下才会被选中。</p> <p>上下文选择符，严格来讲（也就是CSS规范里），叫后代组合式选择符（descendant combinator selector），就是一组以空格分隔的标签名。用于选择作为指定祖先元素后代的标签。</p> <p>p em {color:green;}</p> <p><strong>特殊的上下文选择符</strong></p> <p>子选择符&gt;</p> <p>标签1 &gt; 标签2
+标签2必须是标签1的子元素，或者反过来说，标签1必须是标签2的父元素。与常规的上下文选择符不同，这个选择符中的标签1不能是标签2的父元素之外的其他祖先元素。</p> <p>section &gt; h2 {font-style:italic;}</p> <p>紧邻同胞选择符+</p> <p>标签1 + 标签2</p> <p>标签2必须紧跟在其同胞标签1的后面。</p> <p>h2 + p {font-variant:small-caps;}</p> <p>一般同胞选择符~</p> <p>标签1 ~ 标签2</p> <p>标签2必须跟（不一定紧跟）在其同胞标签1后面。</p></li></ul> <p>h2 ~ a {color:red;}</p> <p>通用选择符*</p> <p>通用选择符*（常被称为星号选择符）是一个通配符，它匹配任何元素，因此下面这条规则</p> <p>*{color:green;}</p> <p>p * {color:red;}</p> <p>section * a {font-size:1.3em;}</p> <p>任何是section孙子元素，而非子元素的a标签都会被选中。至于a的父元素是什么，没有关系。</p> <h2 id="基本选择器"><a href="#基本选择器" class="header-anchor">#</a> 基本选择器</h2> <table><thead><tr><th>选择器</th> <th>示例</th> <th>描述</th></tr></thead> <tbody><tr><td>.class</td> <td>.intro</td> <td>选择 class=&quot;intro&quot; 的所有元素</td></tr> <tr><td>#id</td> <td>#firstname</td> <td>选择 id=&quot;firstname&quot; 的所有元素</td></tr> <tr><td>*</td> <td>*</td> <td>选择所有元素</td></tr> <tr><td>element</td> <td>p</td> <td>选择所有P元素</td></tr> <tr><td>element,element</td> <td>div,p</td> <td>选择所有div元素和所有div元素</td></tr> <tr><td>element element</td> <td>div p</td> <td>选择div元素内部的所有p元素</td></tr> <tr><td>element&gt;element</td> <td>div&gt;p</td> <td>选择父元素为div元素的所有p元素</td></tr> <tr><td>element+element</td> <td>div+p</td> <td>选择紧接在div元素之后的所有p元素</td></tr></tbody></table> <h3 id="标签选择"><a href="#标签选择" class="header-anchor">#</a> 标签选择</h3> <p>使用 * 可为所有元素设置样式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>* {
+    text-decoration: none;
+    color: #6c757d;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>根据标签为元素设置样式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>h1 {
+	color: red;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>同时设置多个元素组合</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>h1,h2 {
+    color: red;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>元素在多个组件中存在</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>h1,h2 {
+    color: red;
+}
+h1,h3{
+    background: #dcdcdc;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="类选择器"><a href="#类选择器" class="header-anchor">#</a> 类选择器</h3> <p>ID和类选择符</p> <p>只要你在HTML标记中为元素添加了id和class属性，就可以在CSS选择符中使用ID和类名，直接选中文档中特定的区域。</p> <p>类属性就是HTML元素的class属性，body标签中包含的任何HTML元素都可以添加这个属性。</p> <p>类选择器是为一类状态声明样式规则，下面是把文本居中定义为类样式。</p> <p>类选择符</p> <p>.类名</p> <p>注意，类选择符前面是点（.），紧跟着类名，两者之间没有空格。</p> <p>类选择符就是在HTML类名前面加一个点（英文句号）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.specialtext {font-style:italic;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>标签带类选择符</p> <p>p.specialtext {color:red;}  只选择带specialtext类的段落。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>p {font-family:helvetica, sans-serif; font-size:1.2em;}
+.specialtext {font-style:italic;}
+p.specialtext {color:red;}
+p.specialtext span {font-weight:bold;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>多类选择符</p> <p>可以给元素添加多个类，比如：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;p class=&quot;specialtext featured&quot;&gt;Here the span tag &lt;span&gt;may or may not&lt;/span&gt; be styled.&lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>多个类名，如这里的specialtext和featured，放在同一对引号里，用空格分隔。实际上，更准确的说法，就应该是HTML的class属性可以有多个空格分隔的值。要选择同时存在这两个类名的元素，可以这样写：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.specialtext.featured {font-size:120%;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>注意，CSS选择符的两个类名之间没有空格，因为我们只想选择同时具有这两个类名的那个元素。如果你加了空格，那就变成了“祖先/后代”关系的上下文选择符了。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.text-center {
+    text-align: center;
+}
+...
+
+&lt;h1 class=&quot;text-center&quot;&gt;houdunren.com&lt;/h1&gt;
+&lt;h2 class=&quot;text-center&quot;&gt;hdcms.com&lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>将类选择器指定为具体标签</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.help-block {
+    background: red;
+}
+span.help-block {
+    font-size: 12px;
+    color: #aaa;
+    background: none;
+}
+...
+&lt;span class=&quot;help-block&quot;&gt;感谢访问后盾人&lt;/span&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="id选择器"><a href="#id选择器" class="header-anchor">#</a> ID选择器</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;p id=&quot;specialtext&quot;&gt;This is the special text.&lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>那么，相应的ID选择符就是这样的：</p> <p>#specialtext {CSS样式声明}
+或者这样的：</p> <p>p#specialtext {CSS样式声明}</p> <p>除此之外，ID与类的用法都一样，而且我们前面讨论的关于类选择符的（几乎）一切，都适应于ID选择符。那两者到底有什么区别呢？</p> <p>用于页内导航的ID
+ID也可以用在页内导航链接中。下面就是一个链接，其目标是同一页的另一个位置。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;a href=&quot;#bio&quot;&gt;Biography&lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>看到href属性值开头的#了吗？它表示这个链接的目标在当前页面中，因而不会触发浏览器加载页面（如果没有#，浏览器就会尝试加载bio目录下的默认页面了）。</p> <p>看到href属性值开头的#了吗？它表示这个</p> <p>为有 id 属性的元素设置样式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#container {
+    background: red;
+}
+
+...
+&lt;h1 id=&quot;container&quot;&gt;houdunren.com&lt;/h1&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>文档中ID应该是唯一的，虽然为多个元素设置同一个ID也可以产生样式效果，但这是不符合规范的。
+建议优先使用类选择器</p> <p><strong>什么时候用ID，什么时候用类</strong></p> <p>乍一看，类和ID都是用于在标记中标识特定标签的HTML属性，似乎完全是可以相互取代嘛。然而，它们的用途实际上大不相同。</p> <p>什么时候使用ID</p> <p>ID的用途是在页面中唯一地标识一个元素。正因为如此，同一个页面中的每一个ID属性，都必须有独一无二的值（名字）。好吧，换一个角度讲，每个ID名在页面中都只能用一次。</p> <p>也可以使用ID把JavaScript与某个标签关联起来（比如，当用户鼠标移动到一个链接上面时，运行激活动画的脚本）。ID值的唯一性对JavaScript尤其重要，否则就会导致JavaScript行为异常。
+在这里，页面中就不能再有其他元素使用mainmenu作为ID名了。为了标识页面的某一部分，比如主导航菜单，可以为nav（navigation，导航）添加一个ID属性，并让它包含菜单元素。</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>mainmenu<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Yin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Yang<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>有了用唯一ID标识的菜单之后，就可以使用上下文选择符来选择其中包含的各种类型的标签了。比如，可以将这个菜单中的链接设置为橙色，同时又不会影响页面中的其他链接：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#mainmenu a {color:orange;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>利用唯一ID，可以在CSS中方便地定位到这个元素，以及它的子元素。到了后面读者会发现，我经常会给页面中每个顶级区域都添加一个ID，从而得到非常明确的上下文，以便编写CSS时只选择嵌套在相应区域内的标签。</p> <p>差不多了吧，你已经理解了ID表示的是页面中一个唯一的HTML元素，下面就来聊一聊什么时候使用类吧。</p> <p><strong>什么时候使用类</strong></p> <p>类的目的是为了标识一组具有相同特征的元素，比如本章前面例子中的那个specialtext类。</p> <p>在下面这个孩子名字的列表中，我想把男孩的名字变成蓝色，把女孩的名字变成粉红色。首先，我用类在标记中标识出了性别。</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>boy<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Alan<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>boy<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Andrew<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>girl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Angela<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>boy<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Angus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>girl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Anne<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>girl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Annette<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>然后，再用CSS为链接应用颜色：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.boy a {color:#6CF;}/*蓝色*/
+.girl a {color:#F9C;}/*粉红色*/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>第一条规则选择所有类名为boy的祖先元素包含的a元素，第二条规则选择所有类名为girl的祖先元素包含的a元素。这两种情况下的祖先元素，都是作为相应链接父元素的li元素。</p> <p>不要乱用类
+要避免Web开发专家Jeffrey Zeldman说的“类泛滥——标记中的麻疹”出现。什么意思呢？就是说你不要像使用ID一样，每个类都指定一个不同的类名，然后再为每个类编写规则。如果你确实有这种随意使用类的习惯，那说明你可能像大多数对CSS充满激情的初学者一样，还不了解继承和上下文选择符的作用。于是，你可能会给每个标签都重复写同样的样式（比如为页面中很多标签分别指定相同的字体）。实际上，继承和上下文选择符能让不同的标签共享样式，从而降低你需要编写和维护的CSS量。</p> <p>ID和类的小结</p> <p>ID的用途是在页面标记中唯一地标识一个特定的元素。它能够为我们编写CSS规则提供必要的上下文，排除无关的标记，而只选择该上下文中的标签。</p> <p>相对来说，类是可以应用给任意多个页面中的任意多个HTML元素的公共标识符，以便我们为这些元素应用相同的CSS样式。而且，使用类也让为不同标签名的元素应用相同的样式成为可能。</p> <h2 id="结构选择器"><a href="#结构选择器" class="header-anchor">#</a> 结构选择器</h2> <table><thead><tr><th>选择器</th> <th>示例</th> <th>描述</th></tr></thead> <tbody><tr><td>element element</td> <td>div p</td> <td>选择div元素内部的所有p元素（里面的）</td></tr> <tr><td>element&gt;element</td> <td>div&gt;p</td> <td>选择父元素为div元素的所有p元素 （仅是父子关系）</td></tr> <tr><td>element+element</td> <td>div+p</td> <td>选择紧接在div元素之后的所有p元素（紧挨着的兄弟）</td></tr> <tr><td>element1~element2</td> <td>p~ul</td> <td>选择前面有p元素的每个ul元素（同级的兄弟）</td></tr></tbody></table> <h3 id="后代选择器"><a href="#后代选择器" class="header-anchor">#</a> 后代选择器</h3> <p>HTML中元素是以父子级、兄弟关系存在的。后代选择器指元素后的元素（不只是子元素，是后代元素）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>main article h2,main h1 {
+    color: green;
+}
+...
+
+&lt;main&gt;
+	&lt;article&gt;
+		&lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&lt;/h2&gt;
+		&lt;aside&gt;
+			&lt;h2&gt;houdunwang.com&lt;/h2&gt;
+		&lt;/aside&gt;
+	&lt;/article&gt;
+	&lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&lt;/h2&gt;
+	&lt;h1&gt;后盾人&lt;/h1&gt;
+&lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="子元素选择"><a href="#子元素选择" class="header-anchor">#</a> 子元素选择</h3> <p>子元素选择器中选择子元素，不包括孙级及以下元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>main article&gt;h2 {
+    color: green;
+}
+...
+
+&lt;main&gt;
+	&lt;article&gt;
+		&lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&lt;/h2&gt;
+		&lt;aside&gt;
+			&lt;h2&gt;houdunwang.com&lt;/h2&gt;
+		&lt;/aside&gt;
+	&lt;/article&gt;
+	&lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&lt;/h2&gt;
+	&lt;h1&gt;后盾人&lt;/h1&gt;
+&lt;/main&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="紧邻兄弟元素"><a href="#紧邻兄弟元素" class="header-anchor">#</a> 紧邻兄弟元素</h3> <p>用于选择紧挨着的同级兄弟元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>main article+h2 {
+    color: green;
+}
+...
+
+&lt;main&gt;
+	&lt;article&gt;
+		&lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&lt;/h2&gt;
+		&lt;aside&gt;
+			&lt;h2&gt;houdunwang.com&lt;/h2&gt;
+		&lt;/aside&gt;
+	&lt;/article&gt;
+	&lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&lt;/h2&gt;
+	&lt;h1&gt;后盾人&lt;/h1&gt;
+&lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="后面兄弟元素"><a href="#后面兄弟元素" class="header-anchor">#</a> 后面兄弟元素</h3> <p>用于选择后面的所有兄弟元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>main article~* {
+    color: green;
+}
+...
+
+&lt;main&gt;
+	&lt;article&gt;
+		&lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&lt;/h2&gt;
+		&lt;aside&gt;
+			&lt;h2&gt;houdunwang.com&lt;/h2&gt;
+		&lt;/aside&gt;
+	&lt;/article&gt;
+	&lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&lt;/h2&gt;
+	&lt;h1&gt;后盾人&lt;/h1&gt;
+&lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="属性选择器"><a href="#属性选择器" class="header-anchor">#</a> 属性选择器</h2> <p>有一种选择元素的方法是属性选择符，它基于HTML标签的属性选择元素。</p> <p>属性名选择符</p> <p>标签名[属性名]
+选择任何带有属性名的标签名。</p> <p>比如，下面的CSS</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img[title] {border:2px solid blue;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>属性值选择符</p> <p>标签名[属性名=&quot;属性值&quot;]
+在HTML5中，属性值的引号可加可不加，在此为了清楚起见，我们加了。
+选择任何带有值为属性值的属性名的标签名。</p> <p>这个选择符可以让你控制到属性的值是什么。例如，这条规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img[title=&quot;red flower&quot;] {border:4px solid green;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在图片的title属性值为red flower的情况下，才会为图片添加边框。换句话说，下面这个img元素就会被加上边框。</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>images/red_flower.jpg<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>red flower<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>red flower<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>属性选择符的小结</p> <p>基于属性名和属性的其他特征选择元素，为我们提供了另一种区别对待相同标签的机会。只要事先规划好，就可以编写出适合属性选择符的标记来。</p> <p>根据属性来为元素设置样式也是常用的场景。</p> <table><thead><tr><th>选择器</th> <th>示例</th> <th>描述</th></tr></thead> <tbody><tr><td>[attribute]</td> <td>[target]</td> <td>选择带有 target 属性所有元素</td></tr> <tr><td>[attribute=value]</td> <td>[target=_blank]</td> <td>选择 target 属性包含单词 &quot;_blank&quot; 的所有元素</td></tr> <tr><td>[attribute~=value]</td> <td>[title~=flower]</td> <td>选择 title 属性包含单词 &quot;flower&quot; 的所有元素</td></tr> <tr><td>[attribute|=value]</td> <td>[lang|=en]</td> <td>选择 lang 属性值以 &quot;en&quot; 开头的所有元素。</td></tr> <tr><td>[attribute*=value]</td> <td>a[src*=&quot;abc&quot;]</td> <td>选择其 src 属性中包含 &quot;abc&quot; 子串的每个 元素</td></tr> <tr><td>[attribute^=value]</td> <td>a[src^=&quot;https&quot;]</td> <td>选择其 src 属性值以 &quot;https&quot; 开头的每个 元素</td></tr> <tr><td>[attribute$=value]</td> <td>a[src$=&quot;.pdf&quot;]</td> <td>选择其 src 属性以 &quot;.pdf&quot; 结尾的所有 元素</td></tr></tbody></table> <p>为具有 class 属性的 h1标签设置样式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>h1[class] {
+    color: red;
+}
+...
+
+&lt;h1 class=&quot;container&quot;&gt;houdunren.com&lt;/h1&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>约束多个属性</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h1[class][id] {
+    color: red;
+}
+...
+
+&amp;lt;h1 class=&quot;container&quot; id &gt;houdunren.com&amp;lt;/h1&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>具体属性值设置样式</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>a[href=&quot;https://www.houdunren.com&quot;] {
+    color: green;
+}
+...
+
+&amp;lt;a href=&quot;https://www.houdunren.com&quot;&gt;后盾人&amp;lt;/a&gt;
+&amp;lt;a href=&quot;&quot;&gt;HDCMS&amp;lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>^ 以指定值开头的元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2[name^=&quot;hdcms&quot;] {
+    color: red;
+}
+...
+
+&amp;lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+&amp;lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>$</code> 以指定值结尾的元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2[name$=&quot;com&quot;] {
+    color: red;
+}
+...
+&amp;lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+&amp;lt;h2 name=&quot;hdcms.com&quot;&gt;hdcms.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>*</code> 属性内部任何位置出现值的元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2[name*=&quot;houdunren&quot;] {
+    color: red;
+}
+...
+
+&amp;lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+&amp;lt;h2 name=&quot;houdunren.com&quot;&gt;hdcms.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>~</code> 属性值中包含指定词汇的元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2[name~=&quot;houdunren&quot;] {
+    color: red;
+}
+...
+
+&amp;lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+&amp;lt;h2 name=&quot;houdunren web&quot;&gt;hdcms.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>|</code> 以指定值开头或以属性连接破折号的元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2[name|=&quot;houdunren&quot;] {
+    color: red;
+}
+...
+
+&amp;lt;h2 name=&quot;houdunren&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+&amp;lt;h2 name=&quot;houdunren-web&quot;&gt;hdcms.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="伪类选择器"><a href="#伪类选择器" class="header-anchor">#</a> 伪类选择器</h2> <p>伪类这个叫法源自它们与类相似，但实际上并没有类会附加到标记中的标签上。伪类分两种。</p> <p>UI（User Interface，用户界面）伪类会在HTML元素处于某个状态时（比如鼠标指针位于链接上），为该元素应用CSS样式。</p> <p>结构化伪类会在标记中存在某种结构上的关系时（如某个元素是一组元素中的第一个或最后一个），为相应元素应用CSS样式。</p> <p>链接伪类</p> <p>针对链接的伪类一共有4个，因为链接始终会处于如下4种状态之一。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Link。此时，链接就在那儿等着用户点击。
+Visited。用户此前点击过这个链接。
+Hover。鼠标指针正悬停在链接上。
+Active。链接正在被点击（鼠标在元素上按下，还没有释放）。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>以下就是这些状态对应的4个伪类选择符（使用了a选择符和一些示例声明）：</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>a:link {color:black;}
+a:visited {color:gray;}
+a:hover {text-decoration:none;}
+a:active {color:red;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>选择符中与众不同的:（冒号）好像在向我们宣示：“我是一个伪类！”</p> <p>一个冒号（:）表示伪类，两个冒号（::）表示CSS3新增的伪元素。尽管浏览器目前都支持对CSS 1和CSS 2的伪元素使用一个冒号，但希望你能习惯于用双冒号代替单冒号，因为这些单冒号的伪元素最终可能都会被淘汰掉。</p> <p>:focus伪类</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>e:focus
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在这个以及后续的例子中，e表示任何元素，如p、h1、section，等等。
+表单中的文本字段在用户单击它时会获得焦点，然后用户才能在其中输入字符。下面的规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>input:focus {border:1px solid blue;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>会在光标位于input字段中时，为该字段添加一个蓝色边框。这样可以让用户明确地知道输入的字符会出现在哪里。</p> <p>:target伪类</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>e:target
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果用户点击一个指向页面中其他元素的链接，则那个元素就是目标（target），可以用:target伪类选中它。</p> <p>对于下面这个链接</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;a href=&quot;#more_info&quot;&gt;More Information&lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>位于页面其他地方、ID为more_info的那个元素就是目标。该元素可能是这样的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;h2 id=&quot;more_info&quot;&gt;This is the information you are looking for.&lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>那么，如下CSS规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#more_info:target {background:#eee;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>会在用户单击链接转向ID为more_info的元素时，为该元素添加浅灰色背景。</p> <p>维基百科在其引证中大量使用了:target伪类。维基百科的引证链接就是正文里那些不起眼的数字链接。引证本身则位于长长的页面的最下方。如果没有:target应用的突出显示，很难知道你点击的链接对应着一大堆引证中的哪一个。</p> <p>结构化伪类</p> <p>结构化伪类可以根据标记的结构应用样式，比如根据某元素的父元素或前面的同胞元素是什么。</p> <p>1.:first-child和:last-child</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>e:first-child
+e:last-child
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>:first-child代表一组同胞元素中的第一个元素，而:last-child则代表最后一个。比如，把下面的规则</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ol.results li:first-child {color:blue;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>应用给以下标记：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;ol class=&quot;results&quot;&gt;
+    &lt;li&gt;My Fast Pony&lt;/li&gt;
+    &lt;li&gt;Steady Trotter&lt;/li&gt;
+    &lt;li&gt;Slow Ol' Nag&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>文本“My Fast Pony”就会变成蓝色。如果选择符改成这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ol.results li:last-child {color:red;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>那变成红色的文本就是“Slow Ol' Nag”了。</p> <p>2.:nth-child</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>e:nth-child(n)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>e表示元素名，n表示一个数值（也可以使用odd或even）。
+例如，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>li:nth-child(3)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>会选择一组列表项中的每个第三项。</p> <p>:nth-child伪类最常用于提高表格的可读性，比如，对表格的所有行交替应用不同颜色。</p> <p>伪元素</p> <p>顾名思义，伪元素就是你的文档中若有实无的元素。以下我们介绍几个最有用的伪元素</p> <ol><li>::first-letter伪元素</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>e::first-letter
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>比如，以下CSS规则：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>p::first-letter {font-size:300%;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以得到的段落首字符放大的效果。</p> <p>如果不用伪元素创建这个首字符放大效果，必须手工给该字母加上<span>标签，然后再为该标签应用样式。而伪元素实际上是替我们添加了无形的标签。</span></p> <ol start="2"><li>::first-line伪元素</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>e::first-line
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以选中文本段落（一般情况下是段落）的第一行。例如</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>p::first-line {font-variant:small-caps;} 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>可以把第一行以小型大写字母显示，</p> <p>用::first-line伪元素把第一行变成了小型大写字母。注意，::first-line伪元素的长度会随浏览器窗口大小的变化而改变。</p> <p>3.::before和::after伪元素</p> <p>以下两个伪元素</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>e::before
+e::after
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>可用于在特定元素前面或后面添加特殊内容。</p> <p>以下标记</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;p class=&quot;age&quot;&gt;25&lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>和如下样式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>p.age::before {content:&quot;Age: &quot;;}
+p.age::after {content:&quot; years.&quot;;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>注意，每个content属性值中都包含了空格，以便输出结果中有适当的空距。
+能得到以下结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Age: 25 years.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果标签中的内容是通过数据库查询生成的结果，那么用这种技巧再合适不过了。因为所有结果都是数字，使用这两个伪元素可以在把数字呈现给用户时，加上说明性文字。</p> <p>这个例子展示了对::before和::after伪元素很基本又很实用的应用。</p> <p>为元素的不同状态或不确定存在的元素设置样式规则。</p> <table><thead><tr><th>状态</th> <th>示例</th> <th>说明</th></tr></thead> <tbody><tr><td>:link</td> <td>a:link</td> <td>选择所有未被访问的链接</td></tr> <tr><td>:visited</td> <td>a:visited</td> <td>选择所有已被访问的链接</td></tr> <tr><td>:hover</td> <td>a:hover</td> <td>鼠标移动到元素上时</td></tr> <tr><td>:active</td> <td>a:active</td> <td>点击正在发生时</td></tr> <tr><td>:focus</td> <td>input::focus</td> <td>选择获得焦点的 input 元素</td></tr> <tr><td>:root</td> <td>:root</td> <td>选择文档的根元素即html</td></tr> <tr><td>:empty</td> <td>p:empty</td> <td>选择没有子元素的每个元素（包括文本节点）</td></tr> <tr><td>:first-child</td> <td>p:first-child</td> <td>选择属于父元素的第一个子元素的每个元素</td></tr> <tr><td>:last-child</td> <td>p:last-child</td> <td>选择属于其父元素最后一个子元素每个元素</td></tr> <tr><td>:first-of-type</td> <td>p:first-of-type</td> <td>选择属于其父元素的首个元素的每个元素</td></tr> <tr><td>:last-of-type</td> <td>p:last-of-type</td> <td>选择属于其父元素的最后元素的每个元素</td></tr> <tr><td>:only-of-type</td> <td>p:only-of-type</td> <td>选择属于其父元素唯一的元素的每个元素</td></tr> <tr><td>:only-child</td> <td>p:only-child</td> <td>选择属于其父元素的唯一子元素的每个元素</td></tr> <tr><td>:nth-child(n)</td> <td>p:nth-child(2)</td> <td>选择属于其父元素的第二个子元素的每个元素</td></tr> <tr><td>:nth-child(odd)</td> <td>p:nth-child(odd)</td> <td>选择属于其父元素的奇数元素</td></tr> <tr><td>:nth-child(even)</td> <td>p:nth-child(even)</td> <td>选择属于其父元素的偶数元素</td></tr> <tr><td>:nth-of-type(n)</td> <td>p:nth-of-type(2)</td> <td>选择属于其父元素第二个元素的每个元素</td></tr> <tr><td>:nth-last-child(n)</td> <td>p:nth-last-child(2)</td> <td>同上，从最后一个子元素开始计数</td></tr> <tr><td>:nth-last-of-type(n)</td> <td>p:nth-last-of-type(2)</td> <td>同上，但是从最后一个子元素开始计数</td></tr> <tr><td>:not(selector)</td> <td>:not(p)</td> <td>选择非元素的每个元素</td></tr></tbody></table> <h3 id="超链接伪类"><a href="#超链接伪类" class="header-anchor">#</a> :超链接伪类</h3> <p>定义链接的不同状态</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>a:link {
+    color: red
+}
+
+a:visited {
+    color: green
+}
+
+a:hover {
+    color: blue
+}
+
+a:active {
+    color: yellow
+}
+...
+
+&amp;lt;a href=&quot;https://www.houdunren.com&quot;&gt;后盾人&amp;lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>不只是链接可以使用伪类，其他元素也可以使用。下面是对表单的点击与获取焦点状态的样式设置。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>input:focus {
+    background: green;
+}
+
+input:hover {
+    background: blue;
+}
+
+input:active {
+    background: yellow;
+}
+...
+
+&amp;lt;input type=&quot;text&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="target"><a href="#target" class="header-anchor">#</a> : target</h3> <p>用于控制具有锚点目标元素的样式</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>div {
+	height: 900px;
+}
+
+div:target {
+	color: red;
+}
+...
+
+&amp;lt;a href=&quot;#hdcms&quot;&gt;hdcms&amp;lt;/a&gt;
+&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;div id=&quot;hdcms&quot;&gt;
+	hdcms内容管理系统
+&amp;lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="root"><a href="#root" class="header-anchor">#</a> :root</h3> <p>根元素选择伪类即选择html</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>:root {
+    font-size: 100px;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="empty"><a href="#empty" class="header-anchor">#</a> :empty</h3> <p>没有内容和空白的元素。下面第一个p标签会产生样式，第二个不会因为有空白内容</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>:empty {
+    border: solid 2px red;
+}
+...
+
+&amp;lt;p&gt;&amp;lt;/p&gt;
+&amp;lt;p&gt; &amp;lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="结构伪类"><a href="#结构伪类" class="header-anchor">#</a> 结构伪类</h2> <p>下面来通过结构伪类选择器选择树状结构中的标签元素。</p> <h3 id="first-child"><a href="#first-child" class="header-anchor">#</a> :first-child</h3> <p>选择元素中<code>span</code> 标签并且是第一个。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:first-child {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+	&amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+	&amp;lt;aside&gt;
+		&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+		&amp;lt;span&gt;hdcms.com&amp;lt;/span&gt;
+	&amp;lt;/aside&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="first-of-type"><a href="#first-of-type" class="header-anchor">#</a> :first-of-type</h3> <p>选择类型是<code>span</code> 的第一个元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:first-of-type {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+	&amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+	&amp;lt;aside&gt;
+		&amp;lt;strong&gt;hdcms.com&amp;lt;/strong&gt;
+		&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+	&amp;lt;/aside&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="last-child"><a href="#last-child" class="header-anchor">#</a> :last-child</h3> <p>选择元素中<code>span</code> 标签并且是最后一个。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:last-child {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+  &amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+  &amp;lt;aside&gt;
+    &amp;lt;strong&gt;hdcms.com&amp;lt;/strong&gt;
+    &amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+  &amp;lt;/aside&gt;
+  &amp;lt;span&gt;hdphp.com&amp;lt;/span&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="last-of-type"><a href="#last-of-type" class="header-anchor">#</a> :last-of-type</h3> <p>选择类型为<code>span</code> 的最后一个元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:last-of-type {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+  &amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+  &amp;lt;aside&gt;
+  	&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+  	&amp;lt;strong&gt;hdcms.com&amp;lt;/strong&gt;
+  &amp;lt;/aside&gt;
+  &amp;lt;span&gt;hdphp.com&amp;lt;/span&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="only-child"><a href="#only-child" class="header-anchor">#</a> :only-child</h3> <p>选择是唯一子元素的<code>span</code> 标签</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:only-child {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+	&amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+	&amp;lt;aside&gt;
+		&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+	&amp;lt;/aside&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="only-of-type"><a href="#only-of-type" class="header-anchor">#</a> :only-of-type</h3> <p>选择同级中类型是<code>span</code> 的唯一子元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:only-of-type {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+	&amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+	&amp;lt;aside&gt;
+		&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+		&amp;lt;span&gt;hdcms.com&amp;lt;/span&gt;
+	&amp;lt;/aside&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="nth-child-n"><a href="#nth-child-n" class="header-anchor">#</a> :nth-child(n)</h3> <p>选择第二个元素并且是span标签的</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:nth-child(2) {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+  &amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+  &amp;lt;aside&gt;
+    &amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+    &amp;lt;span&gt;hdcms.com&amp;lt;/span&gt;
+  &amp;lt;/aside&gt;
+  &amp;lt;span&gt;hdphp.com&amp;lt;/span&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="nth-of-type-n"><a href="#nth-of-type-n" class="header-anchor">#</a> :nth-of-type(n)</h3> <p>选择第二个<code>span</code> 元素，不管中间的其他元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:nth-of-child(2) {
+    color: red;
+}
+...
+
+&amp;lt;article&gt;
+  &amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+  &amp;lt;aside&gt;
+    &amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+    &amp;lt;span&gt;hdcms.com&amp;lt;/span&gt;
+  &amp;lt;/aside&gt;
+  &amp;lt;span&gt;hdphp.com&amp;lt;/span&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="计算数量"><a href="#计算数量" class="header-anchor">#</a> 计算数量</h3> <p>n为0/1/2/3... ，下面是隔列变色</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-child(2n+1) {
+    background: green;
+    color: white;
+}
+...
+
+&amp;lt;table border=&quot;1&quot;&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;houdunren.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;后盾人&amp;lt;/td&gt;
+    &amp;lt;td&gt;houdunwang.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>从第三个开始设置样式</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-child(n+3) {
+    background: rgb(128, 35, 2);
+    color: white;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>设置前三个元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-child(-n+3) {
+    background: rgb(128, 35, 2);
+    color: white;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="奇数元素"><a href="#奇数元素" class="header-anchor">#</a> 奇数元素</h3> <p>选择奇数单元格</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-child(odd) {
+    background: green;
+    color: white;
+}
+...
+
+&amp;lt;table border=&quot;1&quot;&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;houdunren.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;后盾人&amp;lt;/td&gt;
+    &amp;lt;td&gt;houdunwang.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="偶数元素"><a href="#偶数元素" class="header-anchor">#</a> 偶数元素</h3> <p>选择偶数单元格</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-child(even) {
+    background: green;
+    color: white;
+}
+...
+
+&amp;lt;table border=&quot;1&quot;&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;houdunren.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;后盾人&amp;lt;/td&gt;
+    &amp;lt;td&gt;houdunwang.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="nth-last-child-n"><a href="#nth-last-child-n" class="header-anchor">#</a> :nth-last-child(n)</h3> <p>从最后一个元素开始获取</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>table tr&gt;td:nth-last-child(2n+1){
+    background: green;
+    color: white;
+}
+...
+
+&amp;lt;table border=&quot;1&quot;&gt;
+  &amp;lt;tr&gt;
+    &amp;lt;td&gt;houdunren.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;后盾人&amp;lt;/td&gt;
+    &amp;lt;td&gt;houdunwang.com&amp;lt;/td&gt;
+    &amp;lt;td&gt;hdcms&amp;lt;/td&gt;
+  &amp;lt;/tr&gt;
+&amp;lt;/table&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>取最后两个元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>main&gt;ul li:nth-last-child(-n+2) {
+	color: red;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="nth-last-of-type-n"><a href="#nth-last-of-type-n" class="header-anchor">#</a> :nth-last-of-type(n)</h3> <p>从最后一个元素开始选择<code>span</code> 标签 。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>article span:nth-last-of-type(1) {
+    background: red;
+    color: white;
+}
+...
+
+&amp;lt;article&gt;
+  &amp;lt;aside&gt;
+  	&amp;lt;span&gt;houdunren.com&amp;lt;/span&gt;
+  	&amp;lt;span&gt;houdunwang.com&amp;lt;/span&gt;
+  	&amp;lt;strong&gt;hdcms.com&amp;lt;/strong&gt;
+  &amp;lt;/aside&gt;
+	&amp;lt;span&gt;hdphp.com&amp;lt;/span&gt;
+&amp;lt;/article&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="not-selector"><a href="#not-selector" class="header-anchor">#</a> :not(selector)</h3> <p>排除第一个li元素</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>ul li:not(:nth-child(1)) {
+    background: red;
+}
+...
+
+&amp;lt;ul&gt;
+  &amp;lt;li&gt;houdunren.com&amp;lt;/li&gt;
+  &amp;lt;li&gt;hdcms.com&amp;lt;/li&gt;
+  &amp;lt;li&gt;后盾人&amp;lt;/li&gt;
+&amp;lt;/ul&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="表单伪类"><a href="#表单伪类" class="header-anchor">#</a> 表单伪类</h2> <table><thead><tr><th>选择器</th> <th>示例</th> <th>说明</th></tr></thead> <tbody><tr><td>:enabled</td> <td>input:enabled</td> <td>选择每个启用的 input 元素</td></tr> <tr><td>:disabled</td> <td>input:disabled</td> <td>选择每个禁用的 input 元素</td></tr> <tr><td>:checked</td> <td>input:checked</td> <td>选择每个被选中的 input 元素</td></tr> <tr><td>:required</td> <td>input:required</td> <td>包含<code>required</code>属性的元素</td></tr> <tr><td>:optional</td> <td>input:optional</td> <td>不包含<code>required</code>属性的元素</td></tr> <tr><td>:valid</td> <td>input:valid</td> <td>验证通过的表单元素</td></tr> <tr><td>:invalid</td> <td>input:invalid</td> <td>验证不通过的表单</td></tr></tbody></table> <h3 id="表单属性样式"><a href="#表单属性样式" class="header-anchor">#</a> 表单属性样式</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>input:enabled {
+    background: red;
+}
+
+input:disabled {
+    background: #dddddd;
+}
+
+input:checked+label {
+    color: green;
+}
+...
+
+&amp;lt;input type=&quot;text&quot; disabled&gt;
+&amp;lt;input type=&quot;text&quot; name=&quot;info&quot;&gt;
+
+&amp;lt;input type=&quot;radio&quot; name=&quot;sex&quot; checked id=&quot;boy&quot;&gt;
+&amp;lt;label for=&quot;boy&quot;&gt;男&amp;lt;/label&gt;
+&amp;lt;input type=&quot;radio&quot; name=&quot;sex&quot; checked id=&quot;girl&quot;&gt;
+&amp;lt;label for=&quot;girl&quot;&gt;女&amp;lt;/label&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="表单必选样式"><a href="#表单必选样式" class="header-anchor">#</a> 表单必选样式</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>input:required {
+    border: solid 2px blue;
+}
+
+input:optional {
+	background: #dcdcdc; 
+	border: none;
+}
+...
+
+&amp;lt;input type=&quot;text&quot; name=&quot;title&quot; required&gt;
+&amp;lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="表单验证样式"><a href="#表单验证样式" class="header-anchor">#</a> 表单验证样式</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>input:valid {
+    border: solid 1px green;
+}
+
+input:invalid {
+    border: solid 1px red;
+}
+...
+
+&amp;lt;form&gt;
+&amp;lt;input type=&quot;email&quot;&gt;
+&amp;lt;button&gt;保存&amp;lt;/button&gt;
+&amp;lt;/form&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="字符伪类"><a href="#字符伪类" class="header-anchor">#</a> 字符伪类</h2> <table><thead><tr><th>状态</th> <th>示例</th> <th>说明</th></tr></thead> <tbody><tr><td>::first-letter</td> <td>p:first-letter</td> <td>选择每个元素的首字母</td></tr> <tr><td>::first-line</td> <td>p:first-line</td> <td>选择每个元素的首行</td></tr> <tr><td>::before</td> <td>p:before</td> <td>在每个元素的内容之前插入内容</td></tr> <tr><td>::after</td> <td>p:after</td> <td>在每个元素的内容之后插入内容</td></tr></tbody></table> <h3 id="首字母大写"><a href="#首字母大写" class="header-anchor">#</a> 首字母大写</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>p::first-line {
+    font-size: 20px;
+}
+...
+
+&amp;lt;p&gt;
+	后盾人不断更新视频教程
+&amp;lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="段落首行处理"><a href="#段落首行处理" class="header-anchor">#</a> 段落首行处理</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>p::first-letter {
+    font-size: 30px;
+}
+...
+
+&amp;lt;p&gt;
+	后盾人不断更新视频教程
+&amp;lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="在元素前添加"><a href="#在元素前添加" class="header-anchor">#</a> 在元素前添加</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>span::before {
+    content: '⇰';
+    color: red;
+}
+span::after {
+    content: '⟲';
+    color: green;
+}
+...
+
+&amp;lt;span&gt;后盾人&amp;lt;/span&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="搜索框示例"><a href="#搜索框示例" class="header-anchor">#</a> 搜索框示例</h3> <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAhCAYAAABN9OCkAAABRmlDQ1BJQ0MgUHJvZmlsZQAAKJFjYGASSSwoyGFhYGDIzSspCnJ3UoiIjFJgf8zAwcDLIMpgwCCemFxc4BgQ4ANUwgCjUcG3awyMIPqyLsgsOZfwzRZF+Qzt3+54WAqkncZUjwK4UlKLk4H0HyBOSy4oKmFgYEwBspXLSwpA7A4gW6QI6Cggew6InQ5hbwCxkyDsI2A1IUHOQPYNIFsgOSMRaAbjCyBbJwlJPB2JDbUXBHhcXH18FEKNTAzNPQg4l3RQklpRAqKd8wsqizLTM0oUHIGhlKrgmZesp6NgZGBoycAACnOI6s83wGHJKMaBECsQY2CwdGFgYF6MEEuSYmDYDnS/JCdCTGU5AwN/BAPDtoaCxKJEuAMYv7EUpxkbQdjc2xkYWKf9//85nIGBXZOB4e/1//9/b////+8yoPm3GBgOfAMAkoFdEFXeaFAAAAIdSURBVHgB7Zs7roJAFIaP5FZGrIxbsLCyobUnsdQ94Ba0cQ+6BXdhQ2JiQk3UwthYmthgYeV1uOFGg0SYwMB4/kkICDPn8Z0/w9Pa/dEIDQQqSsCoaFwICwRCAhAohFBpAhBopcuD4H6eEez3++ef2AaBXAl0Op3M9l4EKkbLGMnsFQPYEZCd/HCKZycVvRKGQPWqF7toIVB2JdcrYQhUr3qxixYCZVfydAmfz2eazWbkOE66AQX1it3FF+QHZjUiEAQB9Xo9qtfrNJlMSo0cAi0VfzWdL5dLOp1OdL1eQ5GWGSVO8WXSr6jv7XZLo9EoUZzH45Eul4uS6CFQJZj1cmKaJgkRJrXD4UCDwSCcYZP65LUfAs2L5BfZsW2bPM+j+XxO4nr0XVuv1zQcDul2u707nN8+8T1o1Ha7XbSJNXMCi8VCfCccLu12+/68NBqN/2Pj8TgVKVlt1YT1SO7ifSnexUc0sBaPmnzfj82SYnadTqf0ECptNhvqdrsfYclqC3fxH9Hy7dBqtajf78cAGIYRitN13VTijBnIsAPXoBlgoesfgWazSavVKnxWWjQTzKBFE/5C+5ZlKcsKM6gy1HAkQwAClaGGMcoIQKDKUMORDAEIVIYaxigjAIEqQw1HMgQgUBlqGKOMQOwxk+y/75RFDEesCLy86mSVOZLVggBO8VqUiW+QECjf2muROQSqRZn4BgmB8q29Fpn/Ai4t44Qm/srhAAAAAElFTkSuQmCC" alt="image-20190813223919156"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>div {
+    border: solid 1px #ddd;
+    width: 150px;
+}
+
+div&gt;input[type=&quot;text&quot;] {
+    border: none;
+    outline: none;
+}
+
+div&gt;input[type=&quot;text&quot;]+span:after {
+    content: &quot;\21AA&quot;;
+    font-size: 14px;
+    cursor: pointer;
+}
+...
+
+&amp;lt;div&gt;
+	&amp;lt;input type=&quot;text&quot;&gt;&amp;lt;span&gt;&amp;lt;/span&gt;
+&amp;lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="添加属性内容"><a href="#添加属性内容" class="header-anchor">#</a> 添加属性内容</h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>h2::before {
+	content: attr(title);
+}
+...
+
+&amp;lt;h2 title=&quot;后盾人&quot;&gt;houdunren.com&amp;lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023-1-29 18:57:07</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css3/" class="prev router-link-active">
+        基础知识
+      </a></span> <span class="next"><a href="/css3/css_02元素权重.html">
+        元素权重
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca2b87e8.js" defer></script><script src="/assets/js/2.67e62386.js" defer></script><script src="/assets/js/12.1e1c76e1.js" defer></script>
+  </body>
+</html>

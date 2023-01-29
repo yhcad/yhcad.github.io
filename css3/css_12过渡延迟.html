@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础知识 | 海贝课堂</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3f3b8be53c4420bfd58de7c161ab4a5e";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+          </script>
+    <meta name="description" content="web开发、SQL、Delphi学习笔记">
+    
+    <link rel="preload" href="/assets/css/0.styles.576ebed1.css" as="style"><link rel="preload" href="/assets/js/app.ca2b87e8.js" as="script"><link rel="preload" href="/assets/js/2.67e62386.js" as="script"><link rel="preload" href="/assets/js/23.e6e85fbf.js" as="script"><link rel="prefetch" href="/assets/js/10.b4f39549.js"><link rel="prefetch" href="/assets/js/11.cf15e2f7.js"><link rel="prefetch" href="/assets/js/12.1e1c76e1.js"><link rel="prefetch" href="/assets/js/13.d61ba85a.js"><link rel="prefetch" href="/assets/js/14.48098a87.js"><link rel="prefetch" href="/assets/js/15.d8aec2d6.js"><link rel="prefetch" href="/assets/js/16.bc3768c0.js"><link rel="prefetch" href="/assets/js/17.8bc388ca.js"><link rel="prefetch" href="/assets/js/18.ace26f31.js"><link rel="prefetch" href="/assets/js/19.c73c2cdf.js"><link rel="prefetch" href="/assets/js/20.fea3585a.js"><link rel="prefetch" href="/assets/js/21.ec2f6033.js"><link rel="prefetch" href="/assets/js/22.74204588.js"><link rel="prefetch" href="/assets/js/24.dbcfd12c.js"><link rel="prefetch" href="/assets/js/25.956085a7.js"><link rel="prefetch" href="/assets/js/26.cc5e8bfd.js"><link rel="prefetch" href="/assets/js/27.c6c49cec.js"><link rel="prefetch" href="/assets/js/28.39842da3.js"><link rel="prefetch" href="/assets/js/29.1ddb14bf.js"><link rel="prefetch" href="/assets/js/3.ce047343.js"><link rel="prefetch" href="/assets/js/30.10c78e35.js"><link rel="prefetch" href="/assets/js/31.32e36ea6.js"><link rel="prefetch" href="/assets/js/32.edae8995.js"><link rel="prefetch" href="/assets/js/33.f3e6ca9c.js"><link rel="prefetch" href="/assets/js/34.cbc2ef62.js"><link rel="prefetch" href="/assets/js/35.24431fff.js"><link rel="prefetch" href="/assets/js/36.8a0a4253.js"><link rel="prefetch" href="/assets/js/37.04fd0ba3.js"><link rel="prefetch" href="/assets/js/38.cde26f46.js"><link rel="prefetch" href="/assets/js/39.afc4c15b.js"><link rel="prefetch" href="/assets/js/4.859a19ac.js"><link rel="prefetch" href="/assets/js/40.79940bf8.js"><link rel="prefetch" href="/assets/js/41.90f0d80f.js"><link rel="prefetch" href="/assets/js/42.648879b4.js"><link rel="prefetch" href="/assets/js/43.16e62999.js"><link rel="prefetch" href="/assets/js/44.6743936f.js"><link rel="prefetch" href="/assets/js/45.a0a1674f.js"><link rel="prefetch" href="/assets/js/46.1b10e455.js"><link rel="prefetch" href="/assets/js/47.971bece1.js"><link rel="prefetch" href="/assets/js/48.5d37040a.js"><link rel="prefetch" href="/assets/js/49.ac106843.js"><link rel="prefetch" href="/assets/js/5.4f1a5aca.js"><link rel="prefetch" href="/assets/js/50.2b563658.js"><link rel="prefetch" href="/assets/js/51.45f367ec.js"><link rel="prefetch" href="/assets/js/52.881450cf.js"><link rel="prefetch" href="/assets/js/53.98901040.js"><link rel="prefetch" href="/assets/js/54.709aa505.js"><link rel="prefetch" href="/assets/js/55.0e733eff.js"><link rel="prefetch" href="/assets/js/56.44d859f3.js"><link rel="prefetch" href="/assets/js/57.e8ccd9a4.js"><link rel="prefetch" href="/assets/js/6.df560b76.js"><link rel="prefetch" href="/assets/js/7.c9d9c53f.js"><link rel="prefetch" href="/assets/js/8.850dbbc0.js"><link rel="prefetch" href="/assets/js/9.83f6bab7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.576ebed1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="海贝课堂" class="logo"> <span class="site-name can-hide">海贝课堂</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程教程" class="dropdown-title"><span class="title">编程教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程教程" class="mobile-dropdown-title"><span class="title">编程教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/delphi/" class="nav-link">
+  Delphi
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++ Builder
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  SQL
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/html5/" class="nav-link">
+  Html5
+</a></li><li class="dropdown-subitem"><a href="/css3/" class="nav-link router-link-active">
+  CSS3
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/machine/" class="nav-link">
+  机械设计
+</a></div><div class="nav-item"><a href="/soft/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><a href="https://github.com/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://blog.csdn.net/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://yhcad.ys168.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  永硕网盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.yijee.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  易集收藏
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://nav.simpsearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简单导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://mp.weixin.qq.com/s/zeq1sTmaPsKt7Bsok0Ldrg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  常用工具
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鸠摩搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.chaonengsou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  超能搜
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://xiongdipan.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  兄弟盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程教程" class="dropdown-title"><span class="title">编程教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程教程" class="mobile-dropdown-title"><span class="title">编程教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/delphi/" class="nav-link">
+  Delphi
+</a></li><li class="dropdown-item"><!----> <a href="/cpp/" class="nav-link">
+  C++ Builder
+</a></li><li class="dropdown-item"><!----> <a href="/sql/" class="nav-link">
+  SQL
+</a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-subitem"><a href="/html5/" class="nav-link">
+  Html5
+</a></li><li class="dropdown-subitem"><a href="/css3/" class="nav-link router-link-active">
+  CSS3
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/machine/" class="nav-link">
+  机械设计
+</a></div><div class="nav-item"><a href="/soft/" class="nav-link">
+  软件
+</a></div><div class="nav-item"><a href="https://github.com/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://blog.csdn.net/yhcad" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="链接" class="dropdown-title"><span class="title">链接</span> <span class="arrow down"></span></button> <button type="button" aria-label="链接" class="mobile-dropdown-title"><span class="title">链接</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="http://yhcad.ys168.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  永硕网盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://www.yijee.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  易集收藏
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://nav.simpsearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简单导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://mp.weixin.qq.com/s/zeq1sTmaPsKt7Bsok0Ldrg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  常用工具
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  鸠摩搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://www.chaonengsou.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  超能搜
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://xiongdipan.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  兄弟盘
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>学习笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>编程教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/delphi/" class="sidebar-link">Delphi10 手册</a></li><li><a href="/delphi/Delphi01.html" class="sidebar-link">/delphi/Delphi01.html</a></li><li><a href="/delphi/Delphi02.html" class="sidebar-link">Delphi</a></li><li><a href="/delphi/Delphi03.html" class="sidebar-link">Delphi2</a></li><li><a href="/cpp/" class="sidebar-link">C++ Bueilder  教程</a></li><li><a href="/cpp/Cpp20220404.html" class="sidebar-link">C++ Bueilder 教程2</a></li><li><a href="/sql/" class="sidebar-link">SQL语句1</a></li><li><a href="/sql/sql01.html" class="sidebar-link">经典50条SQL语句</a></li><li><a href="/sql/sql02.html" class="sidebar-link">SQL语句2</a></li><li><a href="/html5/" class="sidebar-link">学习环境</a></li><li><a href="/html5/pic.html" class="sidebar-link">链接与图片</a></li><li><a href="/html5/tab.html" class="sidebar-link">表单与列表</a></li><li><a href="/css3/" aria-current="page" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_01选择器.html" class="sidebar-link">选择器</a></li><li><a href="/css3/css_02元素权重.html" class="sidebar-link">元素权重</a></li><li><a href="/css3/css_03文本控制.html" class="sidebar-link">文本基础</a></li><li><a href="/css3/css_04盒子模型.html" class="sidebar-link">盒子模型</a></li><li><a href="/css3/css_05背景处理.html" class="sidebar-link">背景样式</a></li><li><a href="/css3/css_06数据样式.html" class="sidebar-link">表格</a></li><li><a href="/css3/css_07浮动布局.html" class="sidebar-link">浮动布局</a></li><li><a href="/css3/css_08定位布局.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_09弹性布局.html" class="sidebar-link">了解弹性</a></li><li><a href="/css3/css_10栅格介绍.html" class="sidebar-link">栅格介绍</a></li><li><a href="/css3/css_11变形动画.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_12过渡延迟.html" class="active sidebar-link">基础知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#基础知识" class="sidebar-link">基础知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-动画属性-动画属性" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#动画属性)动画属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-元素状态-元素状态" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#元素状态)元素状态</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-初始形态-初始形态" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#初始形态)初始形态</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化形态-变化形态" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#变化形态)变化形态</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-property-transition-property" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-property)transition-property</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-属性设置-属性设置" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#属性设置)属性设置</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-禁用属性-禁用属性" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#禁用属性)禁用属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transitionend-transitionend" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transitionend)transitionend</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-duration-transition-duration" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-duration)transition-duration</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-统一时间-统一时间" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#统一时间)统一时间</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-两个时间-两个时间" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#两个时间)两个时间</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多个时间-多个时间" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#多个时间)多个时间</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-不同时间-不同时间" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#不同时间)不同时间</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-timing-function-transition-timing-function" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-timing-function)transition-timing-function</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-默认参数-默认参数" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#默认参数)默认参数</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-贝塞尔曲线-贝塞尔曲线" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#贝塞尔曲线)贝塞尔曲线</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进速度-步进速度" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#步进速度)步进速度</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-steps-steps" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#steps)steps</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-时钟效果-时钟效果" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#时钟效果)时钟效果</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-step-start-end-step-start-end" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#step-start-end)step-start/end</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进形态-步进形态" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#步进形态)步进形态</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化广告-变化广告" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#变化广告)变化广告</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-delay-transition-delay" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-delay)transition-delay</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-基本使用-基本使用" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#基本使用)基本使用</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多值延迟-多值延迟" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#多值延迟)多值延迟</a></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-使用负值-使用负值" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#使用负值)使用负值</a></li></ul></li><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-transition" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition)transition</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css3/css_12过渡延迟.html#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-点赞案例-点赞案例" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#点赞案例)点赞案例</a></li></ul></li></ul></li><li><a href="/css3/css_13帧动画.html" class="sidebar-link">基础知识</a></li><li><a href="/css3/css_14媒体查询.html" class="sidebar-link">媒体查询</a></li><li><a href="/css3/css_15响应尺寸.html" class="sidebar-link">响应计算</a></li><li><a href="/css3/css_16字体图标.html" class="sidebar-link">字体图标</a></li><li><a href="/css3/css_17常用技巧.html" class="sidebar-link">[#](https://doc.houdunren.com/系统课程/css/18 常用技巧.html#常见技巧)常见技巧</a></li><li><a href="/python/" class="sidebar-link">python学习笔记(首页)</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>机械设计</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>软件</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="基础知识"><a href="#基础知识" class="header-anchor">#</a> 基础知识</h2> <blockquote></blockquote> <p>默认情况下 CSS 属性的变化是瞬间完成的（其实也有时间只是毫秒级的，人眼很难感知到），而使用本章节学习的 CSS 过渡可以控制让变化过程平滑。</p> <blockquote><p>有关变形动画已经讲的很丰富了，请在 <a href="https://www.houdunren.com/" target="_blank" rel="noopener noreferrer">后盾人 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>查看相应章节。</p></blockquote> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-动画属性-动画属性"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-动画属性-动画属性" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#动画属性)动画属性</h3> <p>不是所有 css 属性都有过渡效果，<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="noopener noreferrer">查看支持动画的 CSS 属性 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，一般来讲有中间值的属性都可以设置动画如宽度、透明度等。</p> <p><strong>案例分析</strong></p> <p>下面例子中边框的变化是没有中间值的，所以没有过渡效果。但线宽度是数值类型有中间值所以会有过渡效果。</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8732866.e1e2adfa.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        border: solid 20px #ddd;
+        transition: 2s;
+    }
+
+    div:hover {
+        border-radius: 50%;
+        border: dotted 60px #ddd;
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-元素状态-元素状态"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-元素状态-元素状态" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#元素状态)元素状态</h2> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-初始形态-初始形态"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-初始形态-初始形态" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#初始形态)初始形态</h3> <p>指当页面加载后的样式状态，下面是表单设置的初始样式。</p> <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAACqCAYAAABWFw+7AAABRmlDQ1BJQ0MgUHJvZmlsZQAAKJFjYGASSSwoyGFhYGDIzSspCnJ3UoiIjFJgf8zAycDHwMUgwMCamFxc4BgQ4ANUwgCjUcG3awyMIPqyLsgss692vtJ/rzHwsD97eOnn5v+Y6lEAV0pqcTKQ/gPE6ckFRSUMDIwpQLZyeUkBiN0BZIsUAR0FZM8BsdMh7A0gdhKEfQSsJiTIGci+AWQLJGckAs1gfAFk6yQhiacjsaH2ggCvj7tCqE9IkGO4p4srAfeSDEpSK0pAtHN+QWVRZnpGiYIjMJRSFTzzkvV0FIwMDC0ZGEBhDlH9+QY4LBnFOBBiBWIMDBYzgIIPEWLxQD9sl2Ng4O9DiKkB/SvgxcBwcF9BYlEi3AGM31iK04yNIGzu7QwMrNP+//8czsDArsnA8Pf6//+/t////3cZAwPzLQaGA98AjhVh6X1NuakAAAnpSURBVHgB7d1PjNxlGQfwt7vbf2wbLCFUbWPZUFpBL2rswXguGqNBEg4kjYUDXrzIkQPhRGK4kHBqQmIUtZpAY4kXowe9GA+EcCOhWJoGUrPYLbS69A+zu8xsPWzaZdh3ut35Pc/7WUKynX1n5nk+31++2cz+23Tw0OGl4o0AAQIEUglMpNrGMgQIECCwLKDcXQgECBBIKKDcE4ZqJQIECCh31wABAgQSCij3hKFaiQABAsrdNUCAAIGEAso9YahWIkCAgHJ3DRAgQCChgHJPGKqVCBAgoNxdAwQIEEgooNwThmolAgQIKHfXAAECBBIKKPeEoVqJAAECyt01QIAAgYQCyj1hqFYiQIDA1DCCv37/WimXPxp2xMcIECBAYEwCR97cV2YvXl712YeW++AeSwu9Ve/oRgIECBDoroCXZbqbjckIECAwsoByH5nOHQkQINBdgc99WWbl6Fv2PlgmpnetvMn7BAgQILBBAlfe/sean6mq3AePes+Tx9b84A4SIECAwPoIzB1/uuqBvCxTxeUwAQIEYggo9xg5mZIAAQJVAsq9isthAgQIxBBQ7jFyMiUBAgSqBJR7FZfDBAgQiCGg3GPkZEoCBAhUCSj3Ki6HCRAgEENAucfIyZQECBCoElDuVVwOEyBAIIaAco+RkykJECBQJaDcq7gcJkCAQAwB5R4jJ1MSIECgSkC5V3E5TIAAgRgCyj1GTqYkQIBAlYByr+JymAABAjEElHuMnExJgACBKgHlXsXlMAECBGIIKPcYOZmSAAECVQLKvYrLYQIECMQQUO4xcjIlAQIEqgSUexWXwwQIEIghoNxj5GRKAgQIVAko9youhwkQIBBDQLnHyMmUBAgQqBJQ7lVcDhMgQCCGgHKPkZMpCRAgUCWg3Ku4HCZAgEAMAeUeIydTEiBAoEpAuVdxOUyAAIEYAso9Rk6mJECAQJWAcq/icpgAAQIxBJR7jJxMSYAAgSoB5V7F5TABAgRiCCj3GDmZkgABAlUCyr2Ky2ECBAjEEFDuMXIyJQECBKoElHsVl8MECBCIIaDcY+RkSgIECFQJKPcqLocJECAQQ0C5x8jJlAQIEKgSUO5VXA4TIEAghoByj5GTKQkQIFAloNyruBwmQIBADAHlHiMnUxIgQKBKQLlXcTlMgACBGALKPUZOpiRAgECVgHKv4nKYAAECMQSUe4ycTEmAAIEqAeVexeUwAQIEYggo9xg5mZIAAQJVAsq9isthAgQIxBBQ7jFyMiUBAgSqBJR7FZfDBAgQiCGg3GPkZEoCBAhUCSj3Ki6HCRAgEENgqmbMxfmPyrnnHqq5i7MECBAgMAaBqnLvfXhuDCN6SgIECBCoFfCyTK2Y8wQIEAggoNwDhGREAgQI1AoMfVlmYeuOUgb/eyNAgACBUAJDy/17J6+FWsawBAgQIHBdwMsyrgQCBAgkFFDuCUO1EgECBJS7a4AAAQIJBZR7wlCtRIAAAeXuGiBAgEBCAeWeMFQrESBAQLm7BggQIJBQQLknDNVKBAgQUO6uAQIECCQUUO4JQ7USAQIElLtrgAABAgkFlHvCUK1EgAAB5e4aIECAQEIB5Z4wVCsRIEBAubsGCBAgkFBAuScM1UoECBBQ7q4BAgQIJBQY+peYEu5rpQ4JTM58u+z90u6y445tZan/X5a3Xm+pnD773vI6C2dez7KWPYIJKPdggWUa98tfO1Rmp2fKbKal/r/L5t2lLM6dLco9YbhBVvKyTJCgMo65c3p7xrXsRKATAsq9EzG0OcTSUp6XYtpM0NZdFlDuXU7HbAQIEBhRQLmPCOduBAgQ6LKAcu9yOmYjQIDAiALKfUQ4dyNAgECXBZR7l9MxGwECBEYUUO4jwrkbAQIEuiyg3LucjtkIECAwooByHxHO3QgQINBlAeXe5XTMRoAAgREFlPuIcO62DgJ+QnUdED0EgdUFlPvqLm7dAAG/fGADkD1FswLKvdnou7C4eu9CCmbIKaDcc+YaYiuvyoSIyZBBBZR70OCMTYAAgWECyn2Yjo8RIEAgqIByDxpchrEz/Wm9DHnYIZeAcs+VZ6xtfD01Vl6mDSWg3EPFZdhhAi/8aF957YkD5Vt7p4cdu+ljD399V3n1J/eXlx+776aPuYFAVAHlHjU5c98k8I09d5R9u7aWB3av/W+zPnTwzvLs4b1l/93byl9OXbzpMd1AIKqAco+anLlvWeC7MzvLL37wlbKp/0jH/vlB+e0b52/5MT0Aga4IKPeuJGGODRX45p7p8uLD9y4X+/E35/rlPruhz+/JCNxuAeV+u4U9fucEvnrP9vLSozNlov8p+5/e+rA8/7dznZvRQARuVUC536qg+4cSmLlra/lN/wunk/1m//vpS+WZP78fan7DElirgHJfq5Rz4QW+uHNz+f2R/WXz5Kby+nvz5eevnQ2/kwUIfJaAcv8sGbenEti1faqcOHqgbJuaKG/NXi5PvvJuqv0sQ+BGAeV+o4h/pxPYsXWy/LH//e/TWybKmQtXy5Hj/0q3o4UI3Cig3G8U8e9UAoPP1E8+fqB8Ydtk+felT8qjL79TFv1kbKqMLbO6gHJf3cWtCQSm+l80PXH0/nL39FQ5P98rP/7VqdLT7AmStcJaBJT7WpScCScw+DbHV/q/UmDPnVvKxSsL5ZFfnypXeovh9jAwgVEFlPuocu7XaYHB74kZfNvj/LXF8kj/M/ZL/YL3RqAlgamWlrVrGwI/+87usn3zRLnaW1p+jX3u414bi9uSwAoBn7mvwPBuDoFBsX+ysFQe+9075dylazmWsgWBSgHlXgnmePcFFvpfND36h9Pl3bmr3R/WhARuk4Byv02wHnY8AoNvhvnpq2eWf1BpPBN4VgLdEFDu3cjBFOsg8N+ri+Wp/q8UeOP9+XV4NA9BILaAL6jGzs/0KwR++Mu3V/zLuwTaFvCZe9v5254AgaQCyj1psNYiQKBtAeXedv62J0AgqYByTxqstQgQaFtAubedv+0JEEgqoNyTBmstAgTaFlDubedvewIEkgoo96TBWosAgbYFlHvb+dueAIGkAso9abDWIkCgbQHl3nb+tidAIKmAck8arLUIEGhbQLm3nb/tCRBIKqDckwZrLQIE2hZQ7m3nb3sCBJIKKPekwUZY6z8XLkYY04wEQgoo95Cx5Rj6f/Mf51jEFgQ6KLDp4KHD/b866Y3AGAQmJsfwpBv8lIsLG/yEno7AdQF/Zs+VMD4BxTc+e8+cXsDLMukjtiABAi0KKPcWU7czAQLpBZR7+ogtSIBAiwLKvcXU7UyAQHoB5Z4+YgsSINCigHJvMXU7EyCQXkC5p4/YggQItCig3FtM3c4ECKQXUO7pI7YgAQItCij3FlO3MwEC6QWUe/qILUiAQIsCnwIRUcg16reTdwAAAABJRU5ErkJggg==" alt="image-20190914111828873"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    input {
+        border: solid 5px #e67e22;
+        height: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input:checked {
+        position: relative;
+        width: 60px;
+        height: 60;
+        border: none;
+    }
+
+    input:checked::before {
+        content: '⩗';
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        background: #3498db;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;input type=&quot;text&quot;&gt;
+&amp;lt;input type=&quot;checkbox&quot; checked&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化形态-变化形态"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化形态-变化形态" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#变化形态)变化形态</h3> <p>指元素由初始状态变化后的状态，比如鼠标放上、表单获得焦点后的形态。</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8529268.4caf2ee6.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+         padding: 20px;
+    }
+
+    input {
+        border: solid 5px #e67e22;
+        height: 60px;
+        width: 100%;
+        margin-bottom: 20px;
+        transition: 2s;
+    }
+
+    input:hover {
+        border: solid 5px #000 !important;
+    }
+
+    input:focus {
+        background: #e67e22;
+    }
+
+    input:checked {
+        position: relative;
+        width: 60px;
+        height: 60;
+        border: none;
+    }
+
+    input:checked::before {
+        content: '⩗';
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        background: #3498db;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;input type=&quot;text&quot;&gt;
+&amp;lt;input type=&quot;checkbox&quot; checked&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-property-transition-property"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-property-transition-property" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-property)transition-property</h2> <p>用于设置哪些属性应用过渡效果。</p> <ul><li>默认值为<code>all</code> 即所有属性都发生过渡效果</li> <li>多个属性使用逗号分隔</li></ul> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-属性设置-属性设置"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-属性设置-属性设置" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#属性设置)属性设置</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8703495.c1eef020.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 3s;
+    }
+
+    main:hover div {
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-禁用属性-禁用属性"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-禁用属性-禁用属性" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#禁用属性)禁用属性</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8688852.61c4f1a2.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background: #e74c3c;
+        transition-property: background, transform;
+        transition-duration: 2s;
+        margin-bottom: 50px;
+    }
+
+    main:hover div{
+        transform: scale(1.5) rotate(180deg);
+        background: #9b59b6;
+    }
+
+    div:last-child {
+        transition-property: none;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transitionend-transitionend"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transitionend-transitionend" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transitionend)transitionend</h2> <p>用于控制过渡结束后执行的 JS 事件，简写属性会触发多次如 <code>border-radius</code> 会触发四次事件，不难理解因为可以为<code>border-bottom-left-radius</code> 等四个属性独立设置过渡，所以就会有四次事件。</p> <table><thead><tr><th>属性</th> <th>说明</th></tr></thead> <tbody><tr><td>propertyName</td> <td>结束过渡样式</td></tr> <tr><td>elapsedTime</td> <td>过渡需要的时间</td></tr> <tr><td>pseudoElement</td> <td>过渡的伪元素</td></tr> <tr><td>isTrusted</td> <td>true:用户触发，false:脚本触发</td></tr></tbody></table> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8785908.6fb16183.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: #34495e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    div::before {
+        content: '后盾人';
+        font-size: 3em;
+        color: #2c3e50;
+        background: #95a5a6;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        transition-duration: 2s;
+        cursor: pointer;
+    }
+
+    div:hover::before {
+         transition-duration: 1.5s;
+				 border-radius: 50%;
+				 background: #f1c40f;
+         transform: rotate(360deg);
+    }
+
+    div::after {
+        content: 'houdunren.com';
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -60px;
+        font-size: 2em;
+        color: #95a5a6;
+        text-align: center;
+        transform: translateX(-999px) skew(45deg);
+        transition-duration: 1s;
+    }
+
+    div.move::after {
+        transform: translateX(0px) skew(0deg);
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+    &amp;lt;div&gt;
+
+    &amp;lt;/div&gt;
+&amp;lt;/main&gt;
+&amp;lt;script&gt;
+    document.querySelector('div').addEventListener('transitionend', function (e) {
+        console.log(e);
+        document.querySelector('div').className = 'move';
+    })
+&amp;lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-duration-transition-duration"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-duration-transition-duration" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-duration)transition-duration</h2> <p>用于设置过渡时间，需要注意以下几点</p> <ul><li>可使用单位为 ms 毫秒、s 秒</li> <li>默认值为 0s 不产生过渡效果</li> <li>一个值时，所有属性使用同样的时间</li> <li>二个值时，奇数属性使用第一个，偶数属性使用第二个</li> <li>变化属性数量大于时间数量时，后面的属性再从第一个时间开始重复使用</li></ul> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-统一时间-统一时间"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-统一时间-统一时间" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#统一时间)统一时间</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8698225.d8694625.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #34495e;
+        border-radius: 50%;
+        opacity: 0.2;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 3s;
+    }
+
+    div:hover {
+        opacity: 1;
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-两个时间-两个时间"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-两个时间-两个时间" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#两个时间)两个时间</h3> <p>下面共有四个属性并设置了两个时间值，1,3 属性使用第一个值，2,4 属性使用第二个值。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>...
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #34495e;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition-property: background-color, transform, opacity, border-radius;
+  transition-duration: 200ms, 5s;
+}
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多个时间-多个时间"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多个时间-多个时间" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#多个时间)多个时间</h3> <p>下面共有四个属性并设置了三个时间值，1,2,3 属性使用 1,2,3 时间值，第四个属性再从新使用第一个时间值。</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>...
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #34495e;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition-property: background-color, transform, opacity, border-radius;
+  transition-duration: 200ms, 5s, 2s;
+}
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-不同时间-不同时间"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-不同时间-不同时间" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#不同时间)不同时间</h3> <p>可以为初始与变化状态设置不同的时间。</p> <p>下面是将<code>hover</code> 设置为 3s，当鼠标放上时变化时间为 3s。为初始设置为 1s 即表示变化到初始状态需要 1s。</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8712618.11e93849.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 1s;
+    }
+
+    div:hover {
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+        transition-duration: 3s;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-timing-function-transition-timing-function"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-timing-function-transition-timing-function" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-timing-function)transition-timing-function</h2> <p>用于设置过渡效果的速度，可在 <a href="https://cubic-bezier.com/" target="_blank" rel="noopener noreferrer">https://cubic-bezier.com (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>网站在线体验效果差异。</p> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-默认参数-默认参数"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-默认参数-默认参数" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#默认参数)默认参数</h3> <table><thead><tr><th style="text-align:left;">值</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;">linear</td> <td style="text-align:left;">规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。</td></tr> <tr><td style="text-align:left;">ease</td> <td style="text-align:left;">开始慢，然后快，慢下来，结束时非常慢（cubic-bezier(0.25,0.1,0.25,1)）</td></tr> <tr><td style="text-align:left;">ease-in</td> <td style="text-align:left;">开始慢，结束快（等于 cubic-bezier(0.42,0,1,1)）</td></tr> <tr><td style="text-align:left;">ease-out</td> <td style="text-align:left;">开始快，结束慢（等于 cubic-bezier(0,0,0.58,1)）</td></tr> <tr><td style="text-align:left;">ease-in-out</td> <td style="text-align:left;">中间快，两边慢（等于 cubic-bezier(0.42,0,0.58,1)）</td></tr> <tr><td style="text-align:left;">cubic-bezier(<em>n</em>,<em>n</em>,<em>n</em>,<em>n</em>)</td> <td style="text-align:left;">在 cubic-bezier 函数中定义自己的值</td></tr></tbody></table> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 3s;
+        transition-timing-function: ease;
+    }
+
+    div:hover {
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-贝塞尔曲线-贝塞尔曲线"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-贝塞尔曲线-贝塞尔曲线" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#贝塞尔曲线)贝塞尔曲线</h3> <p>需要设置四个值 <code>cubic-bezier(&lt;x1&gt;, &lt;y1&gt;, &lt;x2&gt;, &lt;y2&gt;)</code>，来控制曲线速度，可在 <a href="https://cubic-bezier.com/" target="_blank" rel="noopener noreferrer">https://cubic-bezier.com (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>网站在线体验效果。</p> <p><img src="https://doc.houdunren.com/assets/img/image-20190917143208598.d3bc3aad.png" alt="image-20190917143208598"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>...
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #e67e22;
+  border-radius: 50%;
+  transition-property: background-color, transform, opacity, border-radius;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(.17, .67, .86, .49);
+}
+...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进速度-步进速度"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进速度-步进速度" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#步进速度)步进速度</h3> <p>过渡使用阶梯化呈现，有点像现实生活中的机械舞，下面是把过渡分五步完成。</p> <table><thead><tr><th>选项</th> <th>说明</th></tr></thead> <tbody><tr><td>steps(n,start)</td> <td>设置 n 个时间点，第一时间点变化状态</td></tr> <tr><td>steps(n,end)</td> <td>设置 n 个时间点，第一时间点初始状态</td></tr> <tr><td>step-start</td> <td>等于 steps(1,start)，可以理解为从下一步开始</td></tr> <tr><td>step-end</td> <td>等于 steps(1,end)，可以理解为从当前步开始</td></tr></tbody></table> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-steps-steps"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-steps-steps" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#steps)steps</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8995229.a0f2ad3f.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;head&gt;
+    &amp;lt;style&gt;
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #34495e;
+        }
+
+        ul {
+            width: 800px;
+            height: 300px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        li {
+            flex: 1;
+            border: solid 1px #ddd;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        li::before {
+            content: 'houdunren.com';
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            opacity: .3;
+        }
+
+        ul::before,
+        ul::after {
+            text-align: center;
+            font-size: 2em;
+            line-height: 100px;
+            color: white;
+            z-index: 2;
+        }
+
+        ul::before {
+            content: 'start';
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: #e67e22;
+            transition-duration: 2s;
+            transition-timing-function: steps(4, start);
+            box-sizing: border-box;
+            border-left: solid 10px #fff;
+        }
+
+        ul::after {
+            content: 'end';
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            background: #9b59b6;
+            transition-duration: 2s;
+            transition-timing-function: steps(4, end);
+            box-sizing: border-box;
+            border-right: solid 10px #fff;
+        }
+
+        ul:hover::before {
+            transform: translateX(800px);
+        }
+
+        ul:hover::after {
+            transform: translateX(800px);
+        }
+    &amp;lt;/style&gt;
+&amp;lt;/head&gt;
+
+&amp;lt;body&gt;
+    &amp;lt;ul&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+    &amp;lt;/ul&gt;
+&amp;lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-时钟效果-时钟效果"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-时钟效果-时钟效果" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#时钟效果)时钟效果</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8996478.cd55d120.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;head&gt;
+    &amp;lt;style&gt;
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #34495e;
+        }
+
+        main {
+            width: 400px;
+            height: 400px;
+            background: #ecf0f1;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        main::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #333;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        main::after {
+            content: '';
+            width: 5px;
+            height: 50%;
+            background: #333;
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translateX(-50%);
+            transform-origin: bottom;
+            transition-duration: 60s;
+            transition-timing-function: steps(60, end);
+        }
+
+        body:hover main::after {
+            transform: translateX(-50%) rotate(360deg);
+        }
+    &amp;lt;/style&gt;
+&amp;lt;/head&gt;
+
+&amp;lt;body&gt;
+    &amp;lt;main&gt;
+    &amp;lt;/main&gt;
+    &amp;lt;h3&gt;houdunren.com&amp;lt;/h3&gt;
+&amp;lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-step-start-end-step-start-end"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-step-start-end-step-start-end" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#step-start-end)step-start/end</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8995438.befa69b1.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;head&gt;
+    &amp;lt;style&gt;
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #34495e;
+        }
+
+        ul {
+            width: 400px;
+            height: 300px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        li {
+            flex: 1;
+            border: solid 1px #ddd;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        li::before {
+            content: 'houdunren.com';
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+            opacity: .3;
+        }
+
+        ul::before,
+        ul::after {
+            text-align: center;
+            font-size: 2em;
+            line-height: 100px;
+            color: white;
+            z-index: 2;
+        }
+
+        ul::before {
+            content: 'start';
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: #e67e22;
+            transition-duration: 1s;
+            transition-timing-function: step-start;
+            box-sizing: border-box;
+            border-left: solid 10px #fff;
+        }
+
+        ul::after {
+            content: 'end';
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            background: #9b59b6;
+            transition-duration: 1s;
+            transition-timing-function: step-end;
+            box-sizing: border-box;
+            border-right: solid 10px #fff;
+        }
+
+        ul:hover::before {
+            transform: translateX(200px);
+        }
+
+        ul:hover::after {
+            transform: translateX(200px);
+        }
+    &amp;lt;/style&gt;
+&amp;lt;/head&gt;
+
+&amp;lt;body&gt;
+    &amp;lt;ul&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+        &amp;lt;li&gt;&amp;lt;/li&gt;
+    &amp;lt;/ul&gt;
+&amp;lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进形态-步进形态"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-步进形态-步进形态" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#步进形态)步进形态</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8707495.8794c9d9.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 3s;
+        transition-timing-function: steps(5, end);
+    }
+
+    div:hover {
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化广告-变化广告"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-变化广告-变化广告" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#变化广告)变化广告</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-9032246.afdff4ca.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;head&gt;
+    &amp;lt;style&gt;
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #34495e;
+        }
+
+        main {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section {
+            width: 800px;
+            height: 200px;
+            display: flex;
+            transition-duration: 1s;
+            transition-timing-function: step-start;
+        }
+
+        div {
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        main:hover section {
+            transform: translateX(-400px);
+        }
+    &amp;lt;/style&gt;
+&amp;lt;/head&gt;
+
+&amp;lt;body&gt;
+    &amp;lt;main&gt;
+        &amp;lt;section&gt;
+            &amp;lt;div&gt;&amp;lt;img src=&quot;3.jpg&quot; alt=&quot;&quot;&gt;&amp;lt;/div&gt;
+            &amp;lt;div&gt;&amp;lt;img src=&quot;5.jpg&quot; alt=&quot;&quot;&gt;&amp;lt;/div&gt;
+        &amp;lt;/section&gt;
+    &amp;lt;/main&gt;
+&amp;lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-delay-transition-delay"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-delay-transition-delay" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition-delay)transition-delay</h2> <p>用于设置延迟过渡的时间。</p> <ul><li>默认为 0s 即立刻开始过渡</li> <li>值可以为负数</li> <li>变化属性数量大于时间数量时，后面的属性再从第一个时间开始重复使用</li></ul> <h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-基本使用-基本使用"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-基本使用-基本使用" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#基本使用)基本使用</h3> <p>下面设置了延迟时间为 1s，当鼠标放上</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8713179.daeedc2e.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #e67e22;
+        border-radius: 50%;
+        transition-property: background-color, transform, opacity, border-radius;
+        transition-duration: 1s;
+        transition-delay: 1s;
+    }
+
+    div:hover {
+        border-radius: 0;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多值延迟-多值延迟"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-多值延迟-多值延迟" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#多值延迟)多值延迟</h3> <p>可以设置不同属性的延迟时间。</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8722061.8b59c6a7.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+
+        transition-property: background-color, transform, border-radius;
+        transition-duration: 1s, 2s, 3s;
+        transition-delay: 1s, 3s, 5s;
+    }
+
+    div:hover {
+        border-radius: 50%;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-使用负值-使用负值"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-使用负值-使用负值" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#使用负值)使用负值</h3> <p>下例圆角属性的过渡时间为 4s，设置延迟为 -4s，表示鼠标放上时直接显示在 4s 上的效果。如果设置为-2s 显示圆角变形一半的效果。</p> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8722600.360959b2.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>&amp;lt;style&gt;
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding: 80px;
+    }
+
+    main {
+        width: 400px;
+        height: 400px;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+
+        transition-property: background-color, transform, border-radius;
+        transition-duration: 1s, 2s, 4s;
+        transition-delay: 1s, 2s, -4s;
+    }
+
+    div:hover {
+        border-radius: 50%;
+        transform: scale(2) rotate(180deg);
+        background-color: #e67e22;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;main&gt;
+	&amp;lt;div&gt;&amp;lt;/div&gt;
+&amp;lt;/main&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-transition"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-transition-transition" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#transition)transition</h2> <p>可以使用<code>transition</code> 指令将过渡规则统一设置，需要注意以下几点。</p> <ul><li>必须设置过渡时间</li> <li>延迟时间放在逗号或结束前</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code> transition: border-radius linear 2s 0s,
+                background 2s 2s,
+                width linear 2s 4s,
+                height linear 2s 4s;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-点赞案例-点赞案例"><a href="#https-doc-houdunren-com-系统课程-css-13-过渡延迟-html-点赞案例-点赞案例" class="header-anchor">#</a> [#](https://doc.houdunren.com/系统课程/css/13 过渡延迟.html#点赞案例)点赞案例</h3> <p><img src="https://doc.houdunren.com/assets/img/Untitled-8985345.ca1008c8.gif" alt="Untitled"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code> &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&amp;lt;script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'&gt;&amp;lt;/script&gt;
+&amp;lt;style&gt;
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ecf0f1;
+    }
+
+    div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div i.fa {
+        font-size: 100px;
+        position: absolute;
+        transition: all .5s;
+        color: #ddd;
+    }
+
+    div.heart i.fa {
+        font-size: 400px;
+        color: #e74c3c;
+        opacity: 0;
+    }
+
+    div.heart i.fa:nth-child(2) {
+        font-size: 80px;
+        color: #e74c3c;
+        opacity: 1;
+    }
+&amp;lt;/style&gt;
+
+&amp;lt;body&gt;
+    &amp;lt;div onclick=&quot;heart()&quot;&gt;
+        &amp;lt;i class=&quot;fa fa-heart&quot; aria-hidden=&quot;true&quot;&gt;&amp;lt;/i&gt;
+        &amp;lt;i class=&quot;fa fa-heart&quot; aria-hidden=&quot;true&quot;&gt;&amp;lt;/i&gt;
+    &amp;lt;/div&gt;
+    &amp;lt;script&gt;
+        function heart() {
+            $(&quot;div&quot;).toggleClass('heart');
+        }
+    &amp;lt;/script&gt;
+&amp;lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023-1-29 18:57:07</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css3/css_11变形动画.html" class="prev">
+        基础知识
+      </a></span> <span class="next"><a href="/css3/css_13帧动画.html">
+        基础知识
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca2b87e8.js" defer></script><script src="/assets/js/2.67e62386.js" defer></script><script src="/assets/js/23.e6e85fbf.js" defer></script>
+  </body>
+</html>
